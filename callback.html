@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(n1,n2){
+            console.log(n1+n2)
+        }
+        function sub(n1,n2){
+            console.log(n1-n2)
+        }
+        function mul(n1,n2){
+            console.log(n1*n2)
+        }
+        function rem(n1,n2){
+            console.log(n1%n2)
+        } 
+        function div(n1,n2){
+            console.log(n1/n2)
+        }
+        function operation(n1,n2,callback){
+            callback(n1,n2)
+            console.log("hello")
+        }
+        operation(5,8,add);
+        operation(5,8,mul);
+        operation(5,8,sub);
+        operation(5,8,div);
+        operation(5,8,rem);
+        setTimeout(add,5000)
+
+        
+        function fun1(name,A,fun2){
+            console.log("hi")
+            fun2(name,A)
+        }
+        function fun2(name,A){
+            console.log(name)
+           console.log(A)
+
+        }
+        // fun2("Nithya",22);
+        fun1("Nithya",22,fun2)
+</script>
+</head>
+<body>
+    
+</body>
+</html>
